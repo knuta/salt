@@ -473,7 +473,7 @@ def present(name,
             for key, val in iteritems(changes):
                 if key == 'password':
                     val = 'XXX-REDACTED-XXX'
-                ret['comment'] += '{0}: {1}\n'.format(key, val)
+                ret['comment'] += u'{0}: {1}\n'.format(key, val)
             return ret
         # The user is present
         if 'shadow.info' in __salt__:
